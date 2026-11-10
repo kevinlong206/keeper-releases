@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Keeper is a digital audio workstation for Apple Silicon Macs. Learn about its audio recording, editing, MIDI, and mixing capabilities, and find alpha downloads.">
+    <meta name="description" content="Keeper is a DAW for Apple Silicon Macs, focused on capturing and editing audio and MIDI performances in a traditional linear arrangement timeline.">
     <link rel="canonical" href="https://kevinlong206.github.io/keeper-releases/">
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=3">
     <title>Keeper - macOS digital audio workstation</title>
   </head>
   <body>
     <main>
       <h1>Keeper</h1>
-      <p>Keeper is a native digital audio workstation (DAW) for Apple Silicon Macs. It supports recording, editing, and mixing audio, as well as MIDI sequencing and Audio Unit instruments and effects.</p>
+      <p>Keeper is a native digital audio workstation (DAW) for Apple Silicon Macs, focused on capturing and editing musical performances, both audio and MIDI, in a traditional linear arrangement timeline.</p>
+      <p>It takes inspiration from REAPER, Logic, and Pro Tools, and aims to offer the best editing and comping capabilities of any DAW.</p>
+      <p>It is meant to be a minimal, inspiring environment to record music without getting in your way. There is no AI assistant or plug-in marketplace; the focus is on recording and editing music.</p>
 
       <h2>Download</h2>
       <p><a href="https://github.com/kevinlong206/keeper-releases/releases">Download Keeper and read release notes on GitHub.</a></p>
@@ -26,6 +28,29 @@
         <li>A mixer with effects inserts, sends, buses, and automation.</li>
         <li>Stereo mix and track-stem export in WAV and AIFF.</li>
       </ul>
+
+      <h2>Apollo DSP integration</h2>
+      <p>Keeper includes experimental Apollo Advanced Realtime Monitoring (ARM). It uses Apollo hardware DSP for live input monitoring, pairs qualified UADx effects with their UAD-2 equivalents, and hosts authentic UAD-2 editors inside Keeper without requiring the Console application to be open. Native effects remain available for playback.</p>
+      <p>This integration is currently developed and tested with an original Apollo x4, not all Apollo models or plug-ins. It requires compatible input routing and authorized DSP effects. Recording remains dry/pre-effects; enabled Record FX cannot be combined with ARM, and native-only inserts, Wet Effects, sends, and buses are not mirrored in the live DSP monitor path.</p>
+
+      <h2>Color themes</h2>
+      <p>Choose light or dark palettes from <strong>View &gt; Color Themes</strong>. Options include Light, Dark, Parchment, Sage, Forest, Ocean, Nord, Dracula, Solarized Light and Dark, and Gruvbox Dark.</p>
+      <p>Themes cover Keeper's arrangement, mixer, editors, and controls. Third-party plug-in interfaces retain their own appearance. Changing the theme does not change project content or audio.</p>
+
+      <h2>Screenshots</h2>
+      <p>Actual Keeper windows using a generated demo project, with audio hardware disabled. The demo includes example capture-discontinuity markers. Select an image to view it full size.</p>
+      <figure>
+        <a href="assets/keeper-arrangement-forest.jpg">
+          <img src="assets/keeper-arrangement-forest.jpg" width="1600" height="1056" loading="lazy" decoding="async" alt="Keeper's Forest theme showing audio tracks, waveforms, folder tracks, and automation in the arrangement timeline.">
+        </a>
+        <figcaption>Arrangement view in the Forest theme.</figcaption>
+      </figure>
+      <figure>
+        <a href="assets/keeper-mixer-parchment.jpg">
+          <img src="assets/keeper-mixer-parchment.jpg" width="1600" height="1056" loading="lazy" decoding="async" alt="Keeper's Parchment theme showing mixer channels with insert effects, sends, routing, and faders.">
+        </a>
+        <figcaption>Mixer view in the Parchment theme.</figcaption>
+      </figure>
 
       <h2>Alpha status</h2>
       <p>Keeper is still in alpha development. Bugs are expected, and features and the project format may change. Test with copies of projects, keep separate backups, and do not rely on it for irreplaceable recordings or production deadlines.</p>
